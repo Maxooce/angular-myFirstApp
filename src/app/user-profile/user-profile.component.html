@@ -1,0 +1,9 @@
+<div style="text-align:center">
+<img [src]="User.photo" [alt]="nom" />
+<div><span>Nom : </span>{{User.name}}</div>
+<div><span>Prénom : </span>{{User.firstName}}</div>
+<div id="myDIV"><span>Age : </span>{{User.age}}</div>
+<div>{{User.quote}}</div>
+<div><input type="text" [(ngModel)]="User.quote" placeholder="Votre slogan"/></div>
+<button (click)="hideAge()">Afficher/Masquer mon âge</button>
+</div>
