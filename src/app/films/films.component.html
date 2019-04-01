@@ -1,0 +1,9 @@
+<div style="text-align:center">
+  <ng-container *ngFor="let films of filmList">
+    <ng-template [appDisplayFilms]="displayfilmList">
+      <ul>
+        <li appHighlight>{{ films }}</li>
+      </ul>
+    </ng-template>
+  </ng-container>
+</div>
